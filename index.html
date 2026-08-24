@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nazeef Khan | DevOps Engineer | AWS | Kubernetes | CI/CD</title>
+  <meta name="description" content="Portfolio of Nazeef Ullah, a DevOps Engineer specializing in AWS, Docker, Kubernetes, Jenkins, CI/CD, Cloud Infrastructure, and automation.">
+  <meta name="keywords" content="DevOps Engineer, AWS, Kubernetes, Docker, Jenkins, CI/CD, Cloud Infrastructure, Terraform, CloudFormation, Nazeef Ullah">
+  <meta name="author" content="Nazeef Khan">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nazeef Ullah | DevOps Engineer">
+  <meta property="og:description" content="DevOps Engineer focused on CI/CD automation, cloud infrastructure, containerization, and scalable deployment systems.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <header class="navbar" id="navbar">
+    <nav class="nav container">
+      <a href="#home" class="nav__brand"><span class="prompt-char">~/</span>nazeef-io</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#home" class="nav__link active" data-nav>home</a></li>
+        <li><a href="#about" class="nav__link" data-nav>about</a></li>
+        <li><a href="#skills" class="nav__link" data-nav>skills</a></li>
+        <li><a href="#experience" class="nav__link" data-nav>experience</a></li>
+        <li><a href="#projects" class="nav__link" data-nav>projects</a></li>
+        <li><a href="#certifications" class="nav__link" data-nav>certs</a></li>
+        <li><a href="#education" class="nav__link" data-nav>education</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta" data-nav>contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__nodes" aria-hidden="true">
+        <span class="node node--1"></span>
+        <span class="node node--2"></span>
+        <span class="node node--3"></span>
+        <span class="node node--4"></span>
+        <svg class="node-lines" aria-hidden="true">
+          <line x1="10%" y1="20%" x2="30%" y2="55%"></line>
+          <line x1="30%" y1="55%" x2="70%" y2="30%"></line>
+          <line x1="70%" y1="30%" x2="90%" y2="70%"></line>
+        </svg>
+      </div>
+
+      <div class="container hero__content">
+        <div class="hero__text">
+          <p class="eyebrow">// building systems that ship themselves</p>
+          <h1 class="hero__heading">
+            Hi, I'm <span class="text-accent">Nazeef Khan</span>
+            <span class="hero__role">DevOps Intern</span>
+          </h1>
+          <p class="hero__intro">
+            DevOps Intern focused on CI/CD automation, cloud infrastructure,
+            containerization, and scalable deployment systems.
+          </p>
+
+          <div class="badge-row" aria-label="Core technologies">
+            <span class="badge">AWS</span>
+            <span class="badge">Docker</span>
+            <span class="badge">Kubernetes</span>
+            <span class="badge">Jenkins</span>
+            <span class="badge">Linux</span>
+            <span class="badge">CI/CD</span>
+          </div>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View My Projects</a>
+            <a href="#contact" class="btn btn--ghost">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero__terminal" role="img" aria-label="Terminal showing whoami command output">
+          <div class="terminal">
+            <div class="terminal__bar">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="terminal__title">nazeef@devops:~</span>
+            </div>
+            <div class="terminal__body" id="terminalBody">
+              <p><span class="prompt-char">$</span> <span id="typedCommand"></span><span class="cursor" id="typeCursor">&nbsp;</span></p>
+              <div id="terminalOutput" class="terminal__output"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section__eyebrow">01 / about</p>
+        <h2 class="section__title">Infrastructure is the product</h2>
+
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>
+              DevOps Engineer with hands-on experience in CI/CD, Cloud Computing, and
+              Infrastructure as Code. Skilled in Linux, AWS, Docker, Kubernetes, Jenkins,
+              and CloudFormation with experience architecting automated deployment pipelines
+              and managing scalable cloud infrastructure.
+            </p>
+            <p>
+              Previously worked in software engineering and delivered 4 production Android
+              applications to the Google Play Store with more than 100K cumulative downloads,
+              providing experience across the complete software delivery lifecycle &mdash; from
+              build automation to production monitoring.
+            </p>
+          </div>
+
+          <div class="about__visual reveal">
+            <div class="pipeline-card">
+              <div class="pipeline-card__head">
+                <span class="prompt-char">$</span> cat pipeline.yaml
+              </div>
+              <ul class="pipeline-list">
+                <li><span class="step-icon">01</span> commit &amp; push <span class="ok">✓</span></li>
+                <li><span class="step-icon">02</span> build image <span class="ok">✓</span></li>
+                <li><span class="step-icon">03</span> sonarqube scan <span class="ok">✓</span></li>
+                <li><span class="step-icon">04</span> trivy scan <span class="ok">✓</span></li>
+                <li><span class="step-icon">05</span> deploy to eks <span class="ok">✓</span></li>
+                <li><span class="step-icon">06</span> monitor <span class="pulse-dot" aria-hidden="true"></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <p class="section__eyebrow">02 / skills</p>
+        <h2 class="section__title">Toolbox</h2>
+
+        <div class="skills__grid">
+          <div class="skill-card reveal">
+            <h3 class="skill-card__title">Programming</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card__title">DevOps Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Kubernetes</span>
+              <span class="skill-tag">Jenkins</span>
+              <span class="skill-tag">SonarQube</span>
+              <span class="skill-tag">Trivy</span>
+              <span class="skill-tag">Helm</span>
+              <span class="skill-tag">Argo CD</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card__title">Cloud</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">AWS</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card__title">Infrastructure as Code</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">CloudFormation</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card__title">Monitoring &amp; Observability</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Prometheus</span>
+              <span class="skill-tag">Grafana</span>
+              <span class="skill-tag">CloudWatch</span>
+              <span class="skill-tag">ELK Stack</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section" id="experience">
+      <div class="container">
+        <p class="section__eyebrow">03 / experience</p>
+        <h2 class="section__title">Where I've worked</h2>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <div class="timeline__meta">
+                <span class="timeline__date">Jan 2024 &mdash; Mar 2025</span>
+              </div>
+              <h3 class="timeline__role">Software Engineer</h3>
+              <p class="timeline__org">IT Wing Technologies &middot; Islamabad, Pakistan</p>
+              <ul class="timeline__list">
+                <li>Integrated static analysis using Lint and runtime profiling using TraceView into the development workflow.</li>
+                <li>Helped improve application performance and established repeatable performance benchmarks.</li>
+                <li>Instrumented production applications using Firebase Analytics and Crashlytics.</li>
+                <li>Improved observability of user flows and application errors.</li>
+                <li>Correlated telemetry data with a reported 15% improvement in user retention.</li>
+                <li>Delivered 4 production Android applications to the Google Play Store.</li>
+                <li>Managed the release lifecycle including build automation, code review, versioned deployment, and post-release monitoring.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <p class="section__eyebrow">04 / projects</p>
+        <h2 class="section__title">Featured work</h2>
+
+        <div class="projects__grid">
+          <article class="project-card reveal">
+            <div class="project-card__head">
+              <h3>Kubernetes Deployment on AWS EKS</h3>
+            </div>
+            <div class="project-card__tech">
+              <span class="skill-tag">Kubernetes</span>
+              <span class="skill-tag">AWS EKS</span>
+              <span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">Helm</span>
+            </div>
+            <p class="project-card__desc">
+              Deployed containerized applications on AWS EKS using Kubernetes manifests and
+              Helm charts. Configured autoscaling and load balancing to support highly
+              available workloads.
+            </p>
+            <p class="project-card__desc">
+              Integrated a Jenkins pipeline for automated build, testing, and deployment to
+              the EKS cluster with rollback capability.
+            </p>
+            <div class="project-card__links">
+              <a href="#" class="link-btn" aria-label="View GitHub repository (link placeholder)">GitHub &rarr;</a>
+              <a href="#" class="link-btn" aria-label="View live demo (link placeholder)">Live Demo &rarr;</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__head">
+              <h3>Automated Deployment to AWS EC2</h3>
+            </div>
+            <div class="project-card__tech">
+              <span class="skill-tag">Jenkins</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">AWS EC2</span>
+              <span class="skill-tag">Docker Compose</span>
+              <span class="skill-tag">SSH</span>
+            </div>
+            <p class="project-card__desc">
+              Built a Jenkins Multibranch pipeline to automate Docker image creation,
+              versioning, and deployment to AWS EC2 instances using Docker Hub and Docker
+              Compose over SSH.
+            </p>
+            <p class="project-card__desc">
+              Configured environment-specific deployment stages for development, staging, and
+              production with manual approval gates.
+            </p>
+            <div class="project-card__links">
+              <a href="#" class="link-btn" aria-label="View GitHub repository (link placeholder)">GitHub &rarr;</a>
+              <a href="#" class="link-btn" aria-label="View live demo (link placeholder)">Live Demo &rarr;</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__head">
+              <h3>End-to-End CI/CD Pipeline</h3>
+            </div>
+            <div class="project-card__tech">
+              <span class="skill-tag">Jenkins</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">SonarQube</span>
+              <span class="skill-tag">Trivy</span>
+              <span class="skill-tag">Prometheus</span>
+              <span class="skill-tag">Grafana</span>
+            </div>
+            <p class="project-card__desc">
+              Designed an end-to-end CI/CD pipeline integrating SonarQube for code quality
+              analysis and Trivy for container vulnerability scanning before pushing images to
+              Docker Hub.
+            </p>
+            <p class="project-card__desc">
+              Configured Prometheus and Grafana dashboards for monitoring pipeline and
+              application performance.
+            </p>
+            <div class="project-card__links">
+              <a href="#" class="link-btn" aria-label="View GitHub repository (link placeholder)">GitHub &rarr;</a>
+              <a href="#" class="link-btn" aria-label="View live demo (link placeholder)">Live Demo &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WORKFLOW ================= -->
+    <section class="section" id="workflow">
+      <div class="container">
+        <p class="section__eyebrow">05 / workflow</p>
+        <h2 class="section__title">How code becomes production</h2>
+
+        <div class="workflow reveal" role="img" aria-label="DevOps workflow pipeline from developer to monitoring">
+          <div class="workflow__stage">
+            <span class="workflow__icon" aria-hidden="true">&#9998;</span>
+            <span class="workflow__label">Developer</span>
+          </div>
+          <div class="workflow__arrow" aria-hidden="true"></div>
+          <div class="workflow__stage">
+            <span class="workflow__icon" aria-hidden="true">&#9741;</span>
+            <span class="workflow__label">GitHub</span>
+          </div>
+          <div class="workflow__arrow" aria-hidden="true"></div>
+          <div class="workflow__stage">
+            <span class="workflow__icon" aria-hidden="true">&#8635;</span>
+            <span class="workflow__label">Jenkins CI/CD</span>
+          </div>
+          <div class="workflow__arrow" aria-hidden="true"></div>
+          <div class="workflow__stage">
+            <span class="workflow__icon" aria-hidden="true">&#10003;</span>
+            <span class="workflow__label">SonarQube<br><small>code quality</small></span>
+          </div>
+          <div class="workflow__arrow" aria-hidden="true"></div>
+          <div class="workflow__stage">
+            <span class="workflow__icon" aria-hidden="true">&#128737;</span>
+            <span class="workflow__label">Trivy<br><small>security scan</small></span>
+          </div>
+          <div class="workflow__arrow" aria-hidden="true"></div>
+          <div class="workflow__stage">
+            <span class="workflow__icon" aria-hidden="true">&#128230;</span>
+            <span class="workflow__label">Docker Build</span>
+          </div>
+          <div class="workflow__arrow" aria-hidden="true"></div>
+          <div class="workflow__stage">
+            <span class="workflow__icon" aria-hidden="true">&#128274;</span>
+            <span class="workflow__label">Container<br>Registry</span>
+          </div>
+          <div class="workflow__arrow" aria-hidden="true"></div>
+          <div class="workflow__stage">
+            <span class="workflow__icon" aria-hidden="true">&#9729;</span>
+            <span class="workflow__label">AWS<br><small>EC2 / EKS</small></span>
+          </div>
+          <div class="workflow__arrow" aria-hidden="true"></div>
+          <div class="workflow__stage">
+            <span class="workflow__icon" aria-hidden="true">&#128200;</span>
+            <span class="workflow__label">Monitoring<br><small>Prometheus + Grafana + CloudWatch</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CERTIFICATIONS ================= -->
+    <section class="section section--alt" id="certifications">
+      <div class="container">
+        <p class="section__eyebrow">06 / certifications</p>
+        <h2 class="section__title">Credentials</h2>
+
+        <div class="certs__grid">
+          <div class="cert-card reveal">
+            <h3 class="cert-card__title">AWS Certified Solutions Architect &ndash; Associate</h3>
+            <p class="cert-card__meta">SAA-C03 &middot; 2026</p>
+            <a href="#" class="link-btn" aria-label="Verify AWS credential (link placeholder)">Verify Credential &rarr;</a>
+          </div>
+
+          <div class="cert-card reveal">
+            <h3 class="cert-card__title">Professional Android Developer</h3>
+            <p class="cert-card__meta">NEAT ROOT &middot; 2023</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="section" id="education">
+      <div class="container">
+        <p class="section__eyebrow">07 / education</p>
+        <h2 class="section__title">Academic background</h2>
+
+        <div class="edu-card reveal">
+          <h3 class="edu-card__title">Bachelor of Computer Science</h3>
+          <p class="edu-card__org">Virtual University of Pakistan</p>
+          <p class="edu-card__meta">2022 &ndash; 2026</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <p class="section__eyebrow">08 / contact</p>
+        <h2 class="section__title">Let's build something reliable</h2>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <ul class="contact__list">
+              <li>
+                <span class="contact__label">Location</span>
+                <span class="contact__value">Islamabad, Pakistan</span>
+              </li>
+              <li>
+                <span class="contact__label">Email</span>
+                <a class="contact__value" href="mailto:nazeefkhan228@gmail.com">nazeefkhan228@gmail.com</a>
+              </li>
+              <li>
+                <span class="contact__label">GitHub</span>
+                <a class="contact__value" href="#" aria-label="GitHub profile (link placeholder)">github.com/nazeef-ullah</a>
+              </li>
+              <li>
+                <span class="contact__label">LinkedIn</span>
+                <a class="contact__value" href="#" aria-label="LinkedIn profile (link placeholder)">linkedin.com/in/nazeef-ullah</a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact__form reveal" id="contactForm" novalidate>
+            <div class="form__row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+              <span class="form__error" id="nameError"></span>
+            </div>
+            <div class="form__row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              <span class="form__error" id="emailError"></span>
+            </div>
+            <div class="form__row">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+              <span class="form__error" id="subjectError"></span>
+            </div>
+            <div class="form__row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+              <span class="form__error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <p>&copy; <span id="year"></span> Nazeef Ullah. All Rights Reserved.</p>
+      <div class="footer__socials">
+        <a href="#" aria-label="GitHub (link placeholder)" class="social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.56v-2.17c-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.2 1.78 1.2 1.03 1.78 2.7 1.26 3.36.97.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.68 5.4-5.24 5.69.42.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn (link placeholder)" class="social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+        </a>
+        <a href="mailto:nazeefkhan228@gmail.com" aria-label="Send email" class="social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.2.5 7.8 6.1L19.8 6H4.2ZM20 8.16l-7.4 5.8a1 1 0 0 1-1.2 0L4 8.16V18.5c0 .28.22.5.5.5h15a.5.5 0 0 0 .5-.5V8.16Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,6 +1,5 @@
-# Nazeef Ullah — DevOps Portfolio
 
-A static, dependency-free portfolio website for **Nazeef Ullah**, DevOps Engineer.
+A static, dependency-free portfolio website for **Nazeef Khan**, DevOps Engineer.
 Built with plain HTML5, CSS3, and vanilla JavaScript — no frameworks, no build step.
 
 ## Project Structure

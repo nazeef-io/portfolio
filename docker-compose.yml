@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
     image: nazeef-portfolio:latest
-    container_name: nazeef-portfolio
+    container_name: nazeef-portfolio-container
     ports:
       - "8080:80"
     restart: unless-stopped
